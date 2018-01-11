@@ -24,7 +24,7 @@ The structure of the raw image is the following:
 
 Use the mock-up below as a reference for how to implement the GUI of the application. In general you'll need a menu in the top of the application to allow for opening of the image using `File` -> `Open`. This should prompt a file picker where the user can pick the `.raw` file. 
 
-TODO: Add mockup
+![](https://i.imgur.com/bbvEHVe.png)
 
 ### How you'll be evaluated:
 * Diligence/Completeness of code 
