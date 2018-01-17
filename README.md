@@ -11,7 +11,7 @@ To get started you'll need to install the following:
     * Hint: Look through the documentation to see how this library could be of use to you. It was not included for no reason. 
     * To open the documentation navigate to installation folder of the library (`C:\XstrahlUtils\<version>...\`) and then navigate to `docs\html\` and open the `index.html` file. 
     * Note that this library is only used/tested on Windows 7/10.
-    * If you add a dependency to your project on the `xuImaging` component of `XstrahlUtils` you'll also need to add `xuGpu`. This may require that you have a [CUDA](https://developer.nvidia.com/cuda-toolkit/whatsnew) toolkit installed on your machine and you must have an NVIDIA GPU.  
+    * If you add a dependency to your project on the `xuImaging` component of `XstrahlUtils` you'll also need to add `xuGpu`. This will require that you have the [CUDA 8.0](https://developer.nvidia.com/cuda-80-ga2-download-archive) toolkit installed on your machine and you must have an NVIDIA GPU.  
 * Fork this repository to get started on your solution. 
 
 ## Project Description
