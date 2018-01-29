@@ -6,7 +6,7 @@ To get started you'll need to install the following:
 * [Qt5](https://www.qt.io/download) (Download the open source version, install the latest version).
 * [CMake](https://cmake.org/download/)
 * A C++ IDE of your choice (if you don't have one already).
-    * Note that your submission will be built in Visual Studio on a Windows 10 machine.
+    * Note that your submission will be built in Visual Studio 2013 on a Windows 10 machine.
 * Install the provided `XstrahlUtils` installer. `XstrahlUtils` is a set of libraries and utilties used in house by Xstrahl, Inc.
     * Hint: Look through the documentation to see how this library could be of use to you. It was not included for no reason. 
     * To open the documentation navigate to installation folder of the library (`C:\XstrahlUtils\<version>...\`) and then navigate to `docs\html\` and open the `index.html` file. 
@@ -34,7 +34,17 @@ Some starter code has been given to you in CMake to help you use `XstrahlUtils`.
 * `xuImaging`
 * `xuQt`
 
-When configuring via CMake, CMake will ask you for the `XstrahlUtils_DIR`. You need to set this to the `cmake` folder of the `XstrahlUtils` installation directory (same level where the documentation is installed). 
+To configure via the CMake GUI, open CMake and set the `Source Dir` to the base directory of this project. Set the build directory to a folder **outside** of the source directory. 
+
+When configuring via CMake be sure to select the correct generator based on the IDE you plan to use (see image below):
+![](https://i.imgur.com/CvFpWFz.png)
+
+When configuring via CMake, CMake will ask you for the `XstrahlUtils_DIR`. You need to set this to the `cmake` folder of the `XstrahlUtils` installation directory (same level where the documentation is installed).
+
+Additionally, CMake will also ask for the `Qt5_DIR`. You need to set this to `<Qt5InstallDir>/<buildType>/lib/cmake/Qt5`. 
+
+Once you have everything set up correctly, click "Generate". If no error show up, click "Open Project" and you can get started coding. 
+ 
 ### Rules
 There are a few constraints to your solution:
 * `CMAKE_AUTOMOC` must be turned **off**.
